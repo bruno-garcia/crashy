@@ -1,4 +1,4 @@
-<img src=".github/logo.png" alt="Crashy" width="140"/> 
+<img src=".github/logo.png" alt="Crashy" width="200"/> 
 
 # Crashy
 
@@ -6,6 +6,23 @@ A .NET library with a series of ways to crash an application.
 Particularly native crashes for different platforms.
 This library is useful to test your crash reporting service.
 
+Via .NET, you an trigger crashes such as:
+
+### Managed
+
+* C# exceptions on a non-background thread
+* C# exception throw from a task
+* Unobserved task exception (non fatal)
+
+### Android
+
+* Kotlin exception on a background thread
+* Kotlin exception thrown - can be caught in C#
+
+### macOS
+
+* Objective-C exception
+* Segmentation fault
 
 ## Acknowledgements
 

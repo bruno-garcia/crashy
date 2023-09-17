@@ -7,7 +7,11 @@
 
     <Authors>Bruno Garcia</Authors>
     <Product>Crashy</Product>
-
+    <Description>
+      A library with a series of ways to crash an application.
+      Particularly native crashes for different platforms such as Kotlin on Android and Objective-C on macOS.
+      This library is useful to test your crash reporting service.
+    </Description>
     <PackageTags>Crash;Exception;SegFault;Native</PackageTags>
     <RepositoryType>git</RepositoryType>
     <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
