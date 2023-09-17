@@ -1,8 +1,9 @@
 ﻿Console.WriteLine("Let's crash!");
 
 #if MACOS
-Crashy.ObjectiveC.Crash.ThrowObjectiveCException();
-// Crashy.ObjectiveC.Crash.SegmentationFault();
+// Crashy.ObjectiveC.Crash.CrashSwift();
+// Crashy.ObjectiveC.Crash.ThrowObjectiveCException();
+Crashy.ObjectiveC.Crash.SegmentationFault();
 #endif
 
 // Crashy.CSharp.NonFatal.ThrowUnobservedTaskException();

@@ -3,11 +3,19 @@
     <TargetFrameworks>net6.0;net7.0-macos</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)..\native\objective-c\libCrashyObjc.dylib">
+    <NativeCrashyLibs Include="$(MSBuildThisFileDirectory)..\native\objective-c\libCrashyObjc.dylib"/>
+    <NativeCrashyLibs Include="$(MSBuildThisFileDirectory)..\native\swift\libCrashySwift.dylib"/>
+<!--    <NativeCrashyLibs Include="$(MSBuildThisFileDirectory)..\native\swift\libCrashySwift.dylib.dSYM/**/*"/>-->
+    <None Include="@(NativeCrashyLibs)">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
       <Pack>true</Pack>
       <Link>%(Filename)%(Extension)</Link>
-<!--      <PackagePath>native\macOS\</PackagePath>-->
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="..\native\swift\">
+      <Link>swift</Link>
+    </Folder>
   </ItemGroup>
 </Project>

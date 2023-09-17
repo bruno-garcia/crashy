@@ -53,6 +53,10 @@ public static class ObjectiveC
         /// </example>
         [DllImport("libCrashyObjc", EntryPoint = "throwObjectiveCException")]
         public static extern void ThrowObjectiveCException();
+
+        [DllImport("libCrashyObjc", EntryPoint = "callSwift")]
+        public static extern void CrashSwift();
+
     }
 }
 #endif

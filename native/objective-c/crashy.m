@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "../swift/Sources/Crashy/crashy.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,4 +24,12 @@ void segfault()
     *p = 0;
 }
 
+void callSwift()
+{
+    CrashySwift *crashy = [[CrashySwift alloc] init];
+    [crashy divideByZero];
+}
+
 NS_ASSUME_NONNULL_END
+
+@end
