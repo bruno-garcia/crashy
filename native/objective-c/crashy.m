@@ -2,7 +2,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-void ()
+void throwObjectiveCException()
 {
 #ifdef __EXCEPTIONS
     NSLog(@"Objective-C: Throwing an Exception");
