@@ -1,6 +1,11 @@
 ﻿Console.WriteLine("Let's crash!");
 
-Crashy.CSharp.NonFatal.ThrowUnobservedTaskException();
+#if MACOS
+Crashy.ObjectiveC.Crash.ThrowObjectiveCException();
+// Crashy.ObjectiveC.Crash.SegmentationFault();
+#endif
+
+// Crashy.CSharp.NonFatal.ThrowUnobservedTaskException();
 // Crashy.CSharp.Crash.ThrowOnNonBackgroundThread();
 // await Crashy.CSharp.Crash.ThrowOnTaskRun();
 // Crashy.CSharp.Crash.ThrowOnTaskRunAndWait();

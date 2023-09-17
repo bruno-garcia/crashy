@@ -1,5 +1,8 @@
 ﻿namespace Crashy;
 
+/// <summary>
+/// Managed crashes and errors, coming from C#.
+/// </summary>
 public static class CSharp
 {
     /// <summary>

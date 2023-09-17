@@ -1,7 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0-macos</TargetFrameworks>
   </PropertyGroup>
-
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\native\objective-c\libCrashyObjc.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <Link>%(Filename)%(Extension)</Link>
+<!--      <PackagePath>native\macOS\</PackagePath>-->
+    </None>
+  </ItemGroup>
 </Project>
