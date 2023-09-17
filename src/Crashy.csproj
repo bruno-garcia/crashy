@@ -1,13 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net7.0-macos</TargetFrameworks>
+    <TargetFrameworks>net6.0;net7.0-macos;net7.0-android</TargetFrameworks>
   </PropertyGroup>
-  <ItemGroup>
+  <ItemGroup  Condition="'$(TargetPlatformIdentifier)' != 'android'">
     <None Include="$(MSBuildThisFileDirectory)..\native\objective-c\libCrashyObjc.dylib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Pack>true</Pack>
       <Link>%(Filename)%(Extension)</Link>
-<!--      <PackagePath>native\macOS\</PackagePath>-->
     </None>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetPlatformIdentifier)' == 'android'">
+    <None Include="$(MSBuildThisFileDirectory)sentry-proguard.cfg" Pack="true" PackagePath="" />
+    <AndroidLibrary Include="$(MSBuildThisFileDirectory)..\native\kotlin\crashyKotlin.jar" />
   </ItemGroup>
 </Project>

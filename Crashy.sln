@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{3D15
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crashy.Samples.Console", "samples\Crashy.Samples.Console\Crashy.Samples.Console.csproj", "{877C986B-665B-41F0-BD6D-905398C6FA25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crashy.Samples.Android", "samples\Crashy.Samples.Android\Crashy.Samples.Android.csproj", "{4C0B520A-7D98-4D15-BEC6-855DD641D5A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{877C986B-665B-41F0-BD6D-905398C6FA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{877C986B-665B-41F0-BD6D-905398C6FA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{877C986B-665B-41F0-BD6D-905398C6FA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0B520A-7D98-4D15-BEC6-855DD641D5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0B520A-7D98-4D15-BEC6-855DD641D5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0B520A-7D98-4D15-BEC6-855DD641D5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0B520A-7D98-4D15-BEC6-855DD641D5A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,5 +41,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B7F20C6B-BE67-4587-8737-95A71C308EE0} = {ECB3E568-DD90-44CD-A786-555752D84F64}
 		{877C986B-665B-41F0-BD6D-905398C6FA25} = {3D15B5A1-1B30-40E8-96C6-96F4150FB592}
+		{4C0B520A-7D98-4D15-BEC6-855DD641D5A4} = {3D15B5A1-1B30-40E8-96C6-96F4150FB592}
 	EndGlobalSection
 EndGlobal

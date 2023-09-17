@@ -1,0 +1,4 @@
+<metadata>
+    <attr path="/api/package/class[@visibility='public']" name="visibility">internal</attr>
+    <remove-node path="/api/package[starts-with(@name,'kotlin')]" />
+</metadata>
