@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <Version>1.1.0</Version>
     <TargetFrameworks>net6.0;net7.0-macos;net7.0-android</TargetFrameworks>
     <Deterministic>true</Deterministic>
     <Features>strict</Features>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-
+    <Copyright>Bruno Garcia</Copyright>
     <Authors>Bruno Garcia</Authors>
     <Product>Crashy</Product>
     <Description>
@@ -12,7 +13,7 @@
       Particularly native crashes for different platforms such as Kotlin on Android and Objective-C on macOS.
       This library is useful to test your crash reporting service.
     </Description>
-    <PackageTags>Crash;Exception;SegFault;Native</PackageTags>
+    <PackageTags>Crash;Exception;segfault;Native</PackageTags>
     <RepositoryType>git</RepositoryType>
     <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
     <RepositoryUrl>https://github.com/bruno-garcia/crashy</RepositoryUrl>
