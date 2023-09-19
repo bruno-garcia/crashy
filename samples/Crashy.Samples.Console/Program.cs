@@ -1,7 +1,10 @@
 ﻿Console.WriteLine("Let's crash!");
 
+Crashy.CPlusPlus.Crash.SegmentationFault();
+// Crashy.CPlusPlus.Crash.ThrowSubstrLengthException();
+
 #if MACOS
-Crashy.ObjectiveC.Crash.ThrowObjectiveCException();
+// Crashy.ObjectiveC.Crash.ThrowObjectiveCException();
 // Crashy.ObjectiveC.Crash.SegmentationFault();
 #endif
 

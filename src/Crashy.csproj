@@ -16,7 +16,6 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
     <RepositoryUrl>https://github.com/bruno-garcia/crashy</RepositoryUrl>
-
     <PackageIcon>logo.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -27,6 +26,11 @@
   </ItemGroup>
   <ItemGroup  Condition="'$(TargetPlatformIdentifier)' != 'android'">
     <None Include="$(MSBuildThisFileDirectory)..\native\objective-c\libCrashyObjc.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <Link>%(Filename)%(Extension)</Link>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\native\c++\libCrashyCpp.dylib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Pack>true</Pack>
       <Link>%(Filename)%(Extension)</Link>

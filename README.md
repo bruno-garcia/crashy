@@ -22,7 +22,8 @@ Via .NET, you an trigger crashes such as:
 ### macOS
 
 * Objective-C exception
-* Segmentation fault
+* C++ exception
+* Segmentation fault (C++ and Objective-C libs)
 
 ## Acknowledgements
 
