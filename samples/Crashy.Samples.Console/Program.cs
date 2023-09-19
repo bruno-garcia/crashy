@@ -1,6 +1,8 @@
 ﻿Console.WriteLine("Let's crash!");
 
-Crashy.CPlusPlus.Crash.SegmentationFault();
+Crashy.Rust.Crash.Panic();
+
+// Crashy.CPlusPlus.Crash.SegmentationFault();
 // Crashy.CPlusPlus.Crash.ThrowSubstrLengthException();
 
 #if MACOS

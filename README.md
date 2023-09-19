@@ -23,6 +23,7 @@ Via .NET, you an trigger crashes such as:
 
 * Objective-C exception
 * C++ exception
+* Rust `panic`
 * Segmentation fault (C++ and Objective-C libs)
 
 ## Acknowledgements

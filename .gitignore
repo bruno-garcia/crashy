@@ -6,6 +6,9 @@
 # dotenv files
 .env
 
+# Rust
+target/
+
 # User-specific files
 *.rsuser
 *.suo

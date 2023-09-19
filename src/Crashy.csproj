@@ -35,6 +35,11 @@
       <Pack>true</Pack>
       <Link>%(Filename)%(Extension)</Link>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)..\native\rust\libcrashy_rust.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <Link>%(Filename)%(Extension)</Link>
+    </None>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetPlatformIdentifier)' == 'android'">
     <None Include="$(MSBuildThisFileDirectory)crashy-proguard.cfg" Pack="true" PackagePath="" />
